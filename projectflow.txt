@@ -1,3 +1,10 @@
 1. Create github repo and clone it.
 2. create code.py and add code to it. (It will save a csv file to a new "data" folder)
 3. Do a git add-commit-push before initializing dvc.
+4. Pip install dvc
+5. Now we do "dvc init" (creates .dvcignore, .dvc)
+6. Now do "mkdir S3" 
+7. Now do "dvc remote add -d myremote S3"
+8. Next "dvc add data/"
+    git rm -r --cached 'data'
+    git commit -m "stop tracking data"
